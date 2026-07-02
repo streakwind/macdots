@@ -35,12 +35,23 @@ vim.keymap.set("n", "<leader>tt", function() set_theme("tokyonight") end)
 vim.keymap.set("n", "<leader>tk", function() set_theme("kanagawa") end)
 vim.keymap.set("n", "<leader>tr", function() set_theme("rose-pine") end)
 
+-- system clipboard
+vim.opt.clipboard = "unnamedplus"
+
+-- split below and to the right 
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
 -- terminal
 vim.keymap.set("n", "<leader>tv", "<cmd>vsplit | terminal<CR>")
 vim.keymap.set("n", "<leader>th", "<cmd>split | terminal<CR>")
 vim.keymap.set("n", "<leader>tn", "<cmd>terminal<CR>")
 
-vim.keymap.set("t", "<Esc>", [[<C-\\><C-n]])
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
+-- keep selected
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- window splits
 vim.keymap.set("n", "<leader>wv", "<cmd>vsplit<CR>")
