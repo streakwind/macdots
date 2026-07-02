@@ -4,6 +4,13 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 
+-- line numbers
+vim.opt.number = true
+
+vim.keymap.set("n", "<leader>ur", function()
+    vim.opt.relativenumber = not vim.opt.relativenumber:get()
+end)
+
 -- theming
 local theme_file = vim.fn.stdpath("config") .. "/theme.txt"
 

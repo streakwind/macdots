@@ -7,9 +7,9 @@ return {
         "MunifTanjim/nui.nvim"
     },
     config = function()
-        vim.keymap.set('n', '<leader>e', '<cmd>Neotree filesystem toggle reveal left<CR>')
-        vim.keymap.set('n', '<leader>o', '<cmd>Neotree focus<CR>')
-        vim.keymap.set('n', '<leader>r', '<cmd>Neotree reveal<CR>')
+        vim.keymap.set("n", "<leader>e", "<cmd>Neotree filesystem toggle reveal left<CR>")
+        vim.keymap.set("n", "<leader>o", "<cmd>Neotree focus<CR>")
+        vim.keymap.set("n", "<leader>r", "<cmd>Neotree reveal<CR>")
 
         -- additionally,
         -- a - add file/directory
