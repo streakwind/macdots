@@ -1,0 +1,22 @@
+# theme
+# theme = TokyoNight Moon
+theme = Catppuccin Mocha
+
+# font
+font-family = FiraCode Nerd Font Mono Reg
+font-size = 16
+
+# appearance
+background-opacity = 0.9
+window-padding-x = 10
+window-padding-y = 10
+
+# cursor
+cursor-style = block
+shell-integration-features = no-cursor
+
+# cell height
+adjust-cell-height = 3
+
+# new versions
+auto-update-channel = tip
