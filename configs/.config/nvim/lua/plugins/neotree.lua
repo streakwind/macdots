@@ -7,6 +7,14 @@ return {
         "MunifTanjim/nui.nvim"
     },
     config = function()
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    visible = true,      -- show filtered items instead of hiding them
+                },
+            },
+        })
+
         vim.keymap.set("n", "<leader>e", "<cmd>Neotree filesystem toggle reveal left<CR>")
         vim.keymap.set("n", "<leader>o", "<cmd>Neotree focus<CR>")
         vim.keymap.set("n", "<leader>r", "<cmd>Neotree reveal<CR>")
